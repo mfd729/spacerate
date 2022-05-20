@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spacerate®</title>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+
+<body>
+
+    <!--nav-->
+    <ul class="menu">
+        <li> <a href="/index.html"> <img class="mainLogo" src="../assets/Logo.png"> </a> </li>
+        <!-- HAMBURGER MENU <li> <img class="menuIcon" src="../assets/Menu.svg"> </li> -->
+        <li class="menuItem"> <a href="/index.html"> Home </a></li>
+        <li class="menuItem"> <a href="../pages/properties.html"> Properties </a></li>
+        <li class="menuItem"> <a href="../pages/contact.html">Contact</a> </li>
+        <li class="menuItem"> <a href="../pages/faq.html">FAQ</a> </li>
+        <li class="menuButton"> <a href="../pages/post_property.html"> List your property </a></li>
+
+</ul>      
+
+    
+
+    <h1 class="textoIntro">We are here to help</h1>  
+    <h4 class="introForm">Please fill the details below and we will get back to you in 36hours or less. <span>Guaranteed!</span></h4>
+
+    <!--formulario-->
+    <form class="formContacto" action="php" method="get" enctype="text/plain">
+        
+        <!--nombre-->
+        <label class="nombreForm" for="">name:</label>
+        <input type="text" name="name" id="" required placeholder="John Doe">
+
+        <!--correo-->
+        <label class="correoForm" for="">email:</label>
+        <input type="email" name="mail" id="" required placeholder="yourmail@mail.com">
+
+        <!--telefono-->
+        <label class="telForm" for="">phone number:</label>
+        <input type="number" name="phone" id="" placeholder="11223344">
+
+        <!--motivo-->
+        <label class="motivoForm" for="">you want to reach out for:</label>
+        <select name="support" id="">
+            <option value="">suggestions</option>
+            <option value="">bussiness inquiries</option>
+            <option value="">support</option>
+            <option value="">other... (please add details)</option>
+        </select> 
+
+        <!--comentarios-->
+        <label class="commentsForm" for="">additional comments or thoughts</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!--botones-->
+        <input class="botonReset" type="reset" value="Reset">    
+        <input class="botonEnviar" type="submit" value="Send">
+    </form>
+
+
+
+    <!--footer-->
+    <footer class="footer">
+
+        <p class="copyright">spacerate®. All rights reserved, 2022.</p> <br>
+
+        <img class="socialLogo1" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="logo de instagram">
+        <img class="socialLogo2" src="https://cdn-icons-png.flaticon.com/512/747/747543.png" alt="logo de facebook">
+        <a class="socialLink1" href="https://www.instagram.com/archdigest/?hl=es">Instagram</a>
+        <a class="socialLink2" href="https://www.facebook.com/architecturaldigest/">Facebook</a>
+            
+
+    </footer> 
+
+</body>
+</html>
