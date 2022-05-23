@@ -565,14 +565,20 @@
     margin-left: 0rem;
     margin-right: 3rem;
     width: 2rem;
+} 
+
+.cajasPropiedades{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 7rem);
+    grid-template-rows: repeat(31, 2rem);
+    margin-left: 1rem;
 }
 
-.tituloPropiedad{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    margin-left: 1rem;
-    margin-top: 12rem;
-    text-align: center;
+.fotoPropiedad{
+    width: 336px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .detallesPropiedadPeq{
@@ -586,24 +592,123 @@
     margin-top: 12rem;
 }
 
-.cajaPropiedadPequena{
+.propiedad1{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 4;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    width: 20rem;
-    height: 22rem;
-    background-color: #9B9ECE;
+    background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
-    margin-left: 60rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    display: flex;
 }
 
-.fotoPequena{
-    max-width: 2rem;
-    height: auto;
-} 
+
+.propiedad1:hover{
+    scale: 102%;
+}
+
+.propiedad2{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white; 
+}
+
+.propiedad2:hover{
+    scale: 102%;
+}
+
+.propiedad3{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.propiedad3:hover{
+    scale: 102%;
+}
+
+.propiedad4{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.propiedad4:hover{
+    scale: 102%;
+}
+
+.propiedad5{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.propiedad5:hover{
+    scale: 102%;
+}
+
+.propiedad6{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.propiedad6:hover{
+    scale: 102%;
+}
+
+
+.botonCargarMas{
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+    color: white;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.botonCargarMas:hover{
+    box-shadow: 3px 2px 10px #473bf052;
+    background: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+}
+
 
 
 /* -------------------------------PAGINA CONTACTO ------------------------------------ */
@@ -994,8 +1099,6 @@
         grid-column-end: 10;
         grid-row-start: 23;
         grid-row-end: 29;
-
-
     }
 
     /* Cajas abajo HOME */
