@@ -122,6 +122,13 @@
     grid-template-columns: repeat(12, 6.5rem);
     grid-template-rows: repeat(44, 2rem);
     margin-left: 2rem;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(0px);
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    margin: 0 -10px
 }
 
 
@@ -140,7 +147,8 @@
 }
 
 .cajaDePropiedad1:hover{
-    scale: 102%;
+    transform: translateZ(60px);
+    transition: 0.4s;
 }
 
 .cajaDePropiedad2{
@@ -156,6 +164,12 @@
     color: white;
 }
 
+.cajaDePropiedad2:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
+}
+
 .cajaDePropiedad3{
     z-index: 3;
     grid-row-start: 3;
@@ -169,6 +183,12 @@
     color: white;
 }
 
+.cajaDePropiedad3:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
+}
+
 .cajaDePropiedad4{
     z-index: 2;
     grid-row-start: 2;
@@ -177,9 +197,15 @@
     grid-column-end: 11;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    background-color: #b7baf4e7;
+    background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
+}
+
+.cajaDePropiedad4:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
 }
 
 .cajaDePropiedad5{
@@ -190,9 +216,15 @@
     grid-column-end: 12;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    background-color: #b7baf477;
+    background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
+}
+
+.cajaDePropiedad5:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
 }
 
 .imgPropiedad{
@@ -234,7 +266,6 @@
     width: 1rem;
     height: auto;
     display: inline;
-
 }
 
 .ctaPropiedades{
@@ -264,7 +295,7 @@
 .bannerAnuncio{
     font-family: 'Poppins', sans-serif;   
     font-weight: 100;
-    background-color: #473BF0;
+    background: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
     color: white;
     border-radius: 0.5rem;
     margin: 2rem;
@@ -274,8 +305,11 @@
     grid-column-end: 12;
     grid-row-start: 20;
     grid-row-end: 24;
+}
 
-
+.bannerAnuncio:hover{
+    background: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);    
+    box-shadow: 3px 2px 10px #473bf052;
 }
 
 /* Cajas abajo HOME */
@@ -283,7 +317,7 @@
     margin-left: 2rem;
     grid-row-start: 34;
     grid-row-end: 34;
-    grid-column-start: 9;
+    grid-column-start: 10;
     grid-column-end: 12;
     font-family: 'Poppins', sans-serif;
 }
@@ -294,7 +328,7 @@
     margin-top: 0.5rem;
     grid-row-start: 35;
     grid-row-end: 35;
-    grid-column-start: 9;
+    grid-column-start: 10;
     grid-column-end: 12;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -306,7 +340,7 @@
     margin-top: 0.5rem;
     grid-row-start: 36;
     grid-row-end: 36;
-    grid-column-start: 9;
+    grid-column-start: 10;
     grid-column-end: 12;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -316,13 +350,19 @@
     z-index: 5;
     grid-row-start: 29;
     grid-row-end: 41;
-    grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-start: 6;
+    grid-column-end: 9;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: white;
+    box-shadow: 3px 2px 10px #473bf052;
+}
+
+.cajaDePropiedad6:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
     box-shadow: 3px 2px 10px #473bf052;
 }
 
@@ -332,8 +372,8 @@
     z-index: 4;
     grid-row-start: 28;
     grid-row-end: 40;
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 8;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background-color: #a3a6d9;
@@ -341,12 +381,18 @@
     color: white;
 }
 
+.cajaDePropiedad7:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
+}
+
 .cajaDePropiedad8{
     z-index: 3;
     grid-row-start: 27;
     grid-row-end: 39;
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 7;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background-color: #aeb1ea;
@@ -354,32 +400,49 @@
     color: white;
 }
 
+.cajaDePropiedad8:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
+}
+
 .cajaDePropiedad9{
     z-index: 2;
     grid-row-start: 26;
     grid-row-end: 38;
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 6;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    background-color: #b7baf4e7;
+    background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
+}
+
+.cajaDePropiedad9:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
 }
 
 .cajaDePropiedad10{
     z-index: 1;
     grid-row-start: 25;
     grid-row-end: 37;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    background-color: #b7baf477;
+    background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
 }
 
+.cajaDePropiedad10:hover{
+    transform: translateZ(60px);
+    transition: 0.4s;
+    box-shadow: 3px 2px 10px #473bf052;
+}
 
 /* //////////////////////// footer ////////////////////// */
 
@@ -827,7 +890,7 @@
         grid-column-end: 10;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
-        background-color: #b7baf4e7;
+        background-color: #b5b8ea;
         border-radius: 0.5rem;
         color: white;
     }
@@ -840,7 +903,7 @@
         grid-column-end: 11;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
-        background-color: #b7baf477;
+        background-color: #bdbfea;
         border-radius: 0.5rem;
         color: white;
     }
@@ -1022,7 +1085,7 @@
         grid-column-end: 5;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
-        background-color: #b7baf4e7;
+        background-color: #b5b8ea;
         border-radius: 0.5rem;
         color: white;
     }
@@ -1035,7 +1098,7 @@
         grid-column-end: 4;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
-        background-color: #b7baf477;
+        background-color: #bdbfea;
         border-radius: 0.5rem;
         color: white;
     }
