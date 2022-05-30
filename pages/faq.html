@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest">    
 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
     <!--CSS-->
     <link rel="stylesheet" href="/css/estilos.css">
         
@@ -21,41 +24,81 @@
 
 <body>
 
-    <!--nav-->
-    <ul class="menu">
-            <li> <a href="/index.html"> <img class="mainLogo" src="../assets/Logo.png"> </a> </li>
-            <li> <img class="menuIcon" src="../assets/Menu.svg"> </li>
-            <li class="menuItem"> <a href="/index.html"> Home </a></li>
-            <li class="menuItem"> <a href="../pages/properties.html"> Properties </a></li>
-            <li class="menuItem"> <a href="../pages/contact.html">Contact</a> </li>
-            <li class="menuItem"> <a href="../pages/faq.html">FAQ</a> </li>
-            <li class="menuButton"> <a href="../pages/post_property.html"> List your property </a></li>
+<!-- NAVBAR DE BOOTSTRAP-->    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="/index.html"> <img class="mainLogo" src="../assets/Logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" href="/index.html">Home </a>
+            <a class="nav-link active" href="../pages/properties.html">Properties</a>
+            <a class="nav-link active" href="../pages/contact.html">Contact</a>
+            <a class="nav-link active" href="../pages/faq.html">FAQ</a>
+            <a href="/index.html"> <button type="button" class="btn btn-primary" disabled>List your property</button> </a>
+            </div>
+        </div>
+    </nav>
 
-    </ul>        
+
 
 <h1 class="textoIntro">Frequently Asked Questions:</h1>
 
-
-<form class="search" action="php" method="get" enctype="text/plain">
-    <input type="text" name="search" id="" placeholder="search by keyword">
-    
-  <!--  <h4 class="searchText">search by keyword</h4> -->
-    <img class="searchIcon" src="https://cdn-icons.flaticon.com/png/128/2801/premium/2801881.png?token=exp=1651442623~hmac=fbafbfb66b0e9dcf3a038d4b7c5fc4de" alt="">
+<!-- ACORDION DE BOOTSTRAP-->
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Type your keywords" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 </form>
 
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Can I post my own properties?
+            </button>
+        </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Yes! you can always add how many properties you have for rent. Check <a href="post_property.html" target="_blank">this section </a>for more details
+        </div>
+        </div>
+    </div>
 
-<h3 class="questionTitle">Can I post my own properties?</h3>
-<h5 class="questionAnswer">Yes! you can always add how many properties you have for rent. Check <a href="post_property.html" target="_blank">this section </a>for more details</h5>    
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Can I change my review after I send submit?
+            </button>
+        </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            Once you hit "send" our reviewers will have 24 hours to approve it or reject it. Once that timeframe has passed, you'll get a notification via email, which you can click to edit the review and start the process one more time.
+        </div>
+        </div>
+    </div>
 
-<h3 class="questionTitle">Can I change my review after I send submit?</h3>
-<h5 class="questionAnswer">Once you hit "send" our reviewers will have 24 hours to approve it or reject it. Once that timeframe has passed, you'll get a notification via email, which you can click to edit the review and start the process one more time.</h5>  
+    <div class="card">
+        <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Is it possible that my review remains anonymous?
+            </button>
+        </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+        Of course! When filling the review form, just mark on the "I want this review to be anonymous" section.
+        </div>
+        </div>
+        </div>
+    </div>
 
-<h3 class="questionTitle">Is it possible that my review remains anonymous?</h3>
-<h5 class="questionAnswer">Of course! When filling the review form, just mark on the "I want this review to be anonymous" section.</h5>  
-
-
-
-
+    
 
     <!--footer-->
     <footer class="footer">
@@ -69,5 +112,11 @@
             
 
     </footer> 
+
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
 </body>
 </html>
