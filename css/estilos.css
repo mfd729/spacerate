@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 p{
@@ -22,31 +23,32 @@ a:hover{
 
 .navbar{
     background: white;
-    font-family: 'Poppins', sans-serif;
     color:#13262F;
     position:sticky;
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    
+    display: flex;    
 }
 
-.bg-light{
-    background-color: white !important;
-}
-
-.navbar .btn-primary {
-    background: #9B9ECE;
-    border-style: none;
-    color:#ffffff;
+.navbar-expand-lg {
     display: flex;   
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
+.navbar .nav{
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.bg-light{
+    background-color: white !important;
+}
+
+/* items */
 .nav-link.active:hover {
     text-decoration: underline;
     color: #473BF0;
@@ -55,6 +57,7 @@ a:hover{
 
 .nav-link.active{
     margin-right: 1rem;
+    display: block;
     display: flex;   
     flex-direction: row;
     justify-content: flex-end;
@@ -71,6 +74,17 @@ a:hover{
     align-items: flex-start;
 }
 
+/* boton list your property */
+.navbar .btn-primary {
+    background: #9B9ECE;
+    border-style: none;
+    color:#ffffff; 
+}
+
+.navbar .btn-primary:hover{
+    text-decoration: none;
+}
+
 
 /* SCROLL IZQUIERDO HOME */
 
@@ -81,7 +95,6 @@ a:hover{
     grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 6;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     vertical-align: top;
@@ -95,8 +108,6 @@ a:hover{
     grid-row-end: 9;
     grid-column-start: 1;
     grid-column-end: 6;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
 }
 
 .option3 {
@@ -106,8 +117,6 @@ a:hover{
     grid-row-end: 10;
     grid-column-start: 1;
     grid-column-end: 6;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
 }
 
 
@@ -135,8 +144,6 @@ a:hover{
     grid-row-end: 17;
     grid-column-start: 5;
     grid-column-end: 8;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: white;
@@ -154,8 +161,6 @@ a:hover{
     grid-row-end: 16;
     grid-column-start: 6;
     grid-column-end: 9;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #a3a6d9;
     border-radius: 0.5rem;
     color: white;
@@ -173,8 +178,6 @@ a:hover{
     grid-row-end: 15;
     grid-column-start: 7;
     grid-column-end: 10;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #aeb1ea;
     border-radius: 0.5rem;
     color: white;
@@ -192,8 +195,6 @@ a:hover{
     grid-row-end: 14;
     grid-column-start:8;
     grid-column-end: 11;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -211,8 +212,6 @@ a:hover{
     grid-row-end: 13;
     grid-column-start: 9;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
@@ -232,7 +231,6 @@ a:hover{
 
 
 .nombrePropiedad{
-    font-family: 'Poppins', sans-serif;  
     text-decoration: underline;
     font-size: 16pt;
     margin-top: 0.5rem;  
@@ -240,20 +238,16 @@ a:hover{
 }
 
 .precioPropiedad{
-    font-family: 'Poppins', sans-serif; 
     font-weight: 400;   
     margin-left: 1rem;
 }
 
 .detallesPropiedad{
-    font-family: 'Poppins', sans-serif;   
     font-weight: 300;
     margin-left: 1rem;
 }
 
 .ratingPropiedad{
-    font-family: 'Poppins', sans-serif;   
-    font-weight: normal;
     font-size: 12pt;
     margin-left: 1rem; 
     display: inline;
@@ -266,7 +260,6 @@ a:hover{
 }
 
 .ctaPropiedades{
-    font-family: 'Poppins', sans-serif;   
     font-weight: 300; 
     grid-column-start: 9;
     grid-column-end: 12;
@@ -288,9 +281,9 @@ a:hover{
 }
 
 /*            banner HOME             */
-.bannerAnuncio{
-    font-family: 'Poppins', sans-serif;   
-    font-weight: 100;
+
+.btn-secondary{  
+    font-weight: 300;
     background: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
     color: white;
     border-radius: 0.5rem;
@@ -300,13 +293,14 @@ a:hover{
     grid-column-start: 1;
     grid-column-end: 12;
     grid-row-start: 20;
-    grid-row-end: 24;
+    grid-row-end: 24;    
 }
 
-.bannerAnuncio:hover{
+.btn-secondary:hover{
     background: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);    
-    box-shadow: 3px 2px 10px #473bf052;
+    box-shadow: 3px 2px 10px #473bf052;    
 }
+
 
 /* Cajas abajo HOME */
 .option4 {
@@ -315,7 +309,6 @@ a:hover{
     grid-row-end: 34;
     grid-column-start: 10;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -326,7 +319,6 @@ a:hover{
     grid-row-end: 35;
     grid-column-start: 10;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -338,8 +330,6 @@ a:hover{
     grid-row-end: 36;
     grid-column-start: 10;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
 }
 
 .cajaDePropiedad6{
@@ -348,8 +338,6 @@ a:hover{
     grid-row-end: 41;
     grid-column-start: 6;
     grid-column-end: 9;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: white;
@@ -370,8 +358,6 @@ a:hover{
     grid-row-end: 40;
     grid-column-start: 5;
     grid-column-end: 8;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #a3a6d9;
     border-radius: 0.5rem;
     color: white;
@@ -389,8 +375,6 @@ a:hover{
     grid-row-end: 39;
     grid-column-start: 4;
     grid-column-end: 7;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #aeb1ea;
     border-radius: 0.5rem;
     color: white;
@@ -408,8 +392,6 @@ a:hover{
     grid-row-end: 38;
     grid-column-start: 3;
     grid-column-end: 6;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -427,8 +409,6 @@ a:hover{
     grid-row-end: 37;
     grid-column-start: 2;
     grid-column-end: 5;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
@@ -446,7 +426,6 @@ a:hover{
     margin-top: 2rem;
     padding-top: 1rem;
     background-color: #ACADBC;
-    font-family: 'Poppins', sans-serif;
     color: #13262F;
     display: grid;
     grid-template-columns: repeat(12, 4rem);
@@ -495,7 +474,6 @@ a:hover{
     grid-row-end: 3;
     margin-left: 2rem;
     text-decoration: none; 
-    /*display: inline-block;*/
     color: #13262F;
 }
 
@@ -510,7 +488,6 @@ a:hover{
     grid-row-start: 3;
     grid-row-end: 3;
     text-decoration: none; 
-    /*display: inline-block;*/
     color: #13262F;
 }
 
@@ -523,7 +500,6 @@ a:hover{
 
 
 .filtroGrande{
-    font-family: 'Poppins', sans-serif; 
     font-weight: 300; 
     font-size: 16pt; 
     color:#473BF0;
@@ -532,7 +508,6 @@ a:hover{
 }
 
 .filtros{
-    font-family: 'Poppins', sans-serif; 
     font-weight:800;
     color: #13262F;
     display: flex;
@@ -549,14 +524,12 @@ a:hover{
 }
 
 .textoFiltros{
-    font-family: 'Poppins', sans-serif; 
     font-weight: 400;
     color: #13262F;
     margin-right: 0.5rem;
 }
 
 .inputFiltro{
-    font-family: 'Poppins', sans-serif; 
     font-weight: 300;
     text-align: center;
     margin-left: 0rem;
@@ -579,7 +552,6 @@ a:hover{
 }
 
 .detallesPropiedadPeq{
-    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 12pt;
     display: flex;
@@ -594,8 +566,6 @@ a:hover{
     grid-row-end: 13;
     grid-column-start: 1;
     grid-column-end: 4;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -611,8 +581,6 @@ a:hover{
     grid-row-end: 13;
     grid-column-start: 5;
     grid-column-end: 8;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white; 
@@ -627,8 +595,6 @@ a:hover{
     grid-row-end: 13;
     grid-column-start: 9;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -643,8 +609,6 @@ a:hover{
     grid-row-end: 27;
     grid-column-start: 1;
     grid-column-end: 4;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -659,8 +623,6 @@ a:hover{
     grid-row-end: 27;
     grid-column-start: 5;
     grid-column-end: 8;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -675,8 +637,6 @@ a:hover{
     grid-row-end: 27;
     grid-column-start: 9;
     grid-column-end: 12;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
@@ -692,7 +652,6 @@ a:hover{
     grid-row-end: 30;
     grid-column-start: 5;
     grid-column-end: 8;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     background: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
@@ -710,7 +669,6 @@ a:hover{
 
 /* -------------------------------PAGINA CONTACTO ------------------------------------ */
 .textoIntro{
-    font-family: 'Poppins', sans-serif;
     font-weight: 300; 
     font-size: 16pt; 
     /*text-align: center; */
@@ -719,7 +677,6 @@ a:hover{
 }
 
 .introForm{
-    font-family: 'Poppins', sans-serif;
     font-weight: 300; 
     color:#13262F;
     margin-top: 1rem;
@@ -729,7 +686,6 @@ a:hover{
 }
 
 .form-group{
-    font-family: 'Poppins', sans-serif;
     font-size: 12pt;
     font-weight: 300;
     margin-left: 2rem; 
@@ -748,57 +704,6 @@ a:hover{
     margin-left: 2rem;
 }
 
-/* 
-
-.formContacto{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 36rem;
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-    width: 25rem;
-    text-align: left;
-
-} 
-
-.commentsForm {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;  
-    margin-left: 2rem;
-    margin-top: 0.5rem;
-}
-
-.botonReset{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal; 
-    color: #473BF0;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0.5rem;
-    width: 6rem;
-    height: 2rem;
-    border-color: #473BF0;
-    background-color: white;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
-}
-
-
-.botonEnviar{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal; 
-    color: white;
-    border-radius: 0.5rem;
-    border-color: none;
-    width: 6rem;
-    height: 2rem;
-    background-color: #473BF0;
-    margin-right: 2rem;
-    margin-top: 1rem;
-} */
 
 /* -------------------------------PAGINA FAQ ------------------------------------ */
 /* Search */
@@ -837,7 +742,6 @@ a:hover{
 }
 
 .card-header{
-    font-family: 'Poppins', sans-serif;
     color: #473BF0;
     background-color: #bdbfeabd;
 }
@@ -848,7 +752,6 @@ a:hover{
 }
 
 .card-body{
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #13262F;    
 }
@@ -858,69 +761,7 @@ a:hover{
 }
 
 
-/* --------------              MOBILE            -------------- */
-
-/* --------------        MOBILE     MENU          -------------- */
-
-
-@media only screen and (max-width: 375px) {
-    .menu{
-        background-color: white;
-        font-family: 'Poppins', sans-serif;
-        color: black;
-        display: flex;
-        flex-direction: row;
-        width: 22rem;
-        position: sticky;
-        justify-content: flex-start;
-        align-items: center;
-        padding-right: 1rem;
-        margin-right: 1rem;
-        list-style-type: none;  
-        flex-wrap: wrap;
-    } 
-
-    .menuIcon{
-        height: 1.5rem;
-        display: flex;   
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-    }
-
-
-    .mainLogo{
-        width: 160px;
-        height: auto;
-        margin-left: 2rem;
-        display: flex;   
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        list-style: none;
-    
-    }
-
-    .menuItem{
-    display: none;
-    }
-
-
-    .menuButton{
-        display: none;
-        background-color: #A1B5D8;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 0.5rem;
-        height: 2rem;
-        width: 4rem;
-        text-decoration: none;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-}
+/* --------------------------------------------             MOBILE          ---------- ---------------------------------- */
 
 
 /* --------------        MOBILE     HOME          -------------- */
@@ -933,7 +774,6 @@ a:hover{
         grid-row-end: 1;
         grid-column-start: 1;
         grid-column-end: 6;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 10pt;
         
@@ -945,7 +785,6 @@ a:hover{
         grid-row-end: 1;
         grid-column-start: 6;
         grid-column-end: 10;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 10pt;
     }
@@ -956,8 +795,6 @@ a:hover{
         grid-row-end: 10;
         grid-column-start: 1;
         grid-column-end: 6;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         display: none;
     }
 
@@ -977,8 +814,6 @@ a:hover{
         grid-row-end: 21;
         grid-column-start: 2;
         grid-column-end: 7;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #9B9ECE;
         border-radius: 0.5rem;
         color: white;
@@ -995,8 +830,6 @@ a:hover{
         grid-row-end: 20;
         grid-column-start: 3;
         grid-column-end: 8;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #a3a6d9;
         border-radius: 0.5rem;
         color: white;
@@ -1008,8 +841,6 @@ a:hover{
         grid-row-end: 19;
         grid-column-start: 4;
         grid-column-end: 9;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #aeb1ea;
         border-radius: 0.5rem;
         color: white;
@@ -1021,8 +852,6 @@ a:hover{
         grid-row-end: 18;
         grid-column-start: 5;
         grid-column-end: 10;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #b5b8ea;
         border-radius: 0.5rem;
         color: white;
@@ -1034,8 +863,6 @@ a:hover{
         grid-row-end: 17;
         grid-column-start: 6;
         grid-column-end: 11;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #bdbfea;
         border-radius: 0.5rem;
         color: white;
@@ -1049,7 +876,6 @@ a:hover{
 
 
     .nombrePropiedad{
-        font-family: 'Poppins', sans-serif;  
         text-decoration: underline;
         font-size: 9pt;
         margin-top: 0.25rem;  
@@ -1058,15 +884,13 @@ a:hover{
     }
 
     .precioPropiedad{
-        font-family: 'Poppins', sans-serif; 
         font-weight: 300;  
         font-size: 9pt; 
         margin-left: 0.5rem;
         line-height: 1rem;
     }
 
-    .detallesPropiedad{
-        font-family: 'Poppins', sans-serif;   
+    .detallesPropiedad{ 
         font-weight: 200;
         font-size: 9pt;
         margin-left: 0.5rem;
@@ -1074,8 +898,6 @@ a:hover{
     }
 
     .ratingPropiedad{
-        font-family: 'Poppins', sans-serif;   
-        font-weight: normal;
         font-size: 9pt;
         margin-left: 0.5rem; 
         display: inline;
@@ -1090,8 +912,7 @@ a:hover{
 
     }
 
-    .ctaPropiedades{
-        font-family: 'Poppins', sans-serif;   
+    .ctaPropiedades{ 
         font-weight: 300;
         font-size: 10pt;
         color: #13262F;  
@@ -1115,7 +936,6 @@ a:hover{
 
     /*            banner HOME             */
     .bannerAnuncio{
-        font-family: 'Poppins', sans-serif;   
         font-weight: 100;
         font-size: 8pt;
         background-color: #473BF0;
@@ -1137,7 +957,6 @@ a:hover{
         grid-row-end: 34;
         grid-column-start: 9;
         grid-column-end: 12;
-        font-family: 'Poppins', sans-serif;
     }
 
 
@@ -1149,7 +968,6 @@ a:hover{
         grid-row-end: 35;
         grid-column-start: 9;
         grid-column-end: 12;
-        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 1.5rem;
     }
@@ -1162,8 +980,6 @@ a:hover{
         grid-row-end: 36;
         grid-column-start: 9;
         grid-column-end: 12;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
     }
 
     .cajaDePropiedad6{
@@ -1172,8 +988,6 @@ a:hover{
         grid-row-end: 46;
         grid-column-start: 5;
         grid-column-end: 10;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #9B9ECE;
         border-radius: 0.5rem;
         color: white;
@@ -1188,8 +1002,6 @@ a:hover{
         grid-row-end: 45;
         grid-column-start: 4;
         grid-column-end: 7;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #a3a6d9;
         border-radius: 0.5rem;
         color: white;
@@ -1201,8 +1013,6 @@ a:hover{
         grid-row-end: 44;
         grid-column-start: 3;
         grid-column-end: 6;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #aeb1ea;
         border-radius: 0.5rem;
         color: white;
@@ -1214,8 +1024,6 @@ a:hover{
         grid-row-end: 43;
         grid-column-start: 2;
         grid-column-end: 5;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #b5b8ea;
         border-radius: 0.5rem;
         color: white;
@@ -1227,87 +1035,18 @@ a:hover{
         grid-row-end: 42;
         grid-column-start: 1;
         grid-column-end: 4;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         background-color: #bdbfea;
         border-radius: 0.5rem;
         color: white;
     }
 }
 
-/* -------------------------------PAGINA FAQ MOBILE------------------------------------ */
-@media only screen and (max-width: 375px) {
-
-
-    .textoIntro{    
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300; 
-        font-size: 14pt;
-        color: #473BF0; 
-        margin-left: 2rem;
-        margin-bottom: 0;
-    }
-
-    
-    .questionTitle{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal; 
-        font-size: 12pt;
-        background-color: #9b9ece3d;
-        border-radius: 0.5rem;
-        color: #13262F;
-        height: 3rem;
-        width: 19rem;
-        padding: 0.5rem; 
-        margin-left: 2rem;
-        vertical-align: middle;
-    }
-
-    .questionAnswer{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        border-color: #9b9ece3d;
-        border-radius: 0.5rem;
-        font-size: 12pt;
-        font-weight: 300;
-        color: #13262F;
-        width: 19rem;
-        padding: 0.5rem; 
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .search{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        padding: 4px;
-        color: #13262f9b;
-        display: flex;
-        box-sizing: border-box;
-        border: 1px #6665DD;
-        border-radius: 0.5rem;
-        border-style: solid;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-    
-    .searchIcon{
-        height: 1rem;
-        width: auto;
-        padding: 0.5rem;
-        margin-left: 8rem; 
-    } 
-
-/* //////////////////////// footer ////////////////////// */
+/* //////////////////////// footer mobile ////////////////////// */
 
 .footer{
     margin-top: 2rem;
     padding-top: 1rem;
     background-color: #ACADBC;
-    font-family: 'Poppins', sans-serif;
     color: #13262F;
     display: grid;
     grid-template-columns: repeat(5, 4rem);
@@ -1370,12 +1109,9 @@ a:hover{
     grid-row-start: 3;
     grid-row-end: 3;
     text-decoration: none; 
-    /*display: inline-block;*/
     color: #13262F;
 }
 
 .socialLink2:hover{
     color: #6665DD;
-}
-
 }
