@@ -1,0 +1,1086 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+$myFont: 'Poppins', sans-serif;
+$brightPurple: #473BF0;
+$brightPurpleOpacity: #473BF052;
+$lila: #6665DD;
+$lavanda: #9B9ECE;
+$black: #13262F;
+$grey: #ACADBC;
+$white: white;
+$gradientRegular: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+$gradientInverted: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $myFont;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: $lila;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;    
+        }
+}
+
+/* -------------- menuPrincipal -------------- */
+
+.navbar{
+    background: $white;
+    color:$black;
+    position:sticky;
+    margin-bottom: 1rem;
+    display: flex;    
+}
+
+.navbar-expand-lg {
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .nav{
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.bg-light{
+    background-color: $white !important;
+}
+
+/* items */
+.nav-link.active{
+    margin-right: 1rem;
+    display: block;
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+        &:hover{
+            text-decoration: underline;
+            color: $brightPurple;
+            text-decoration-color: $brightPurple;
+
+        }
+}
+
+.mainLogo{
+    width: 170px;
+    height: auto;
+    margin-left: 2rem;
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* boton list your property */
+.navbar .btn-primary {
+    background: $lavanda;
+    border-style: none;
+    color:#ffffff; 
+        &:hover{
+            text-decoration: none;    
+        }
+}
+
+
+/* SCROLL IZQUIERDO HOME */
+
+
+.option1 {
+    margin-left: 2rem;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-weight: 500;
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+
+.option2 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.option3 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+
+/*                      PROPIEDADES HOME                */
+
+.cajas{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 6.5rem);
+    grid-template-rows: repeat(44, 2rem);
+    margin-left: 2rem;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(0px);
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    margin: 0 -10px
+}
+
+
+.cajaDePropiedad1{
+    z-index: 5;
+    grid-row-start: 5;
+    grid-row-end: 17;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: $lavanda;
+    border-radius: 0.5rem;
+    color: $white;
+    box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;  
+        }
+}
+
+
+.cajaDePropiedad2{
+    z-index: 4;
+    grid-row-start: 4;
+    grid-row-end: 16;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;  
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }    
+}
+
+.cajaDePropiedad3{
+    z-index: 3;
+    grid-row-start: 3;
+    grid-row-end: 15;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;  
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }   
+}
+
+.cajaDePropiedad4{
+    z-index: 2;
+    grid-row-start: 2;
+    grid-row-end: 14;
+    grid-column-start:8;
+    grid-column-end: 11;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;  
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }   
+}
+
+.cajaDePropiedad5{
+    z-index: 1;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;  
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }   
+}
+
+.imgPropiedad{
+    width: 312px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nombrePropiedad{
+    text-decoration: underline;
+    font-size: 16pt;
+    margin-top: 0.5rem;  
+    margin-left: 1rem;
+}
+
+.precioPropiedad{
+    font-weight: 400;   
+    margin-left: 1rem;
+}
+
+.detallesPropiedad{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.ratingPropiedad{
+    font-size: 12pt;
+    margin-left: 1rem; 
+    display: inline;
+}
+
+.ratingStars{
+    width: 1rem;
+    height: auto;
+    display: inline;
+}
+
+.ctaPropiedades{
+    font-weight: 300; 
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 18;
+    padding: 0.5rem;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;
+        }  
+}
+
+.ctaPropiedades img{
+    width: 1.5rem;
+    height: auto;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    text-decoration: none; 
+}
+
+
+/*            banner HOME             */
+
+.btn-secondary{  
+    font-weight: 300;
+    background: $gradientRegular;
+    color: $white;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 20;
+    grid-row-end: 24; 
+        &:hover{
+            background: $gradientInverted;    
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }   
+}
+
+
+/* Cajas abajo HOME */
+.option4 {
+    margin-left: 2rem;
+    grid-row-start: 34;
+    grid-row-end: 34;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+
+.option5 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 35;
+    grid-row-end: 35;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.option6 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 36;
+    grid-row-end: 36;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+.cajaDePropiedad6{
+    z-index: 5;
+    grid-row-start: 29;
+    grid-row-end: 41;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: $lavanda;
+    border-radius: 0.5rem;
+    color: $white;
+    box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }
+}
+
+.cajaDePropiedad7{
+    z-index: 4;
+    grid-row-start: 28;
+    grid-row-end: 40;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }
+}
+
+.cajaDePropiedad8{
+    z-index: 3;
+    grid-row-start: 27;
+    grid-row-end: 39;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }
+}
+
+.cajaDePropiedad9{
+    z-index: 2;
+    grid-row-start: 26;
+    grid-row-end: 38;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }
+}
+
+.cajaDePropiedad10{
+    z-index: 1;
+    grid-row-start: 25;
+    grid-row-end: 37;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+        }
+}
+
+/* //////////////////////// footer ////////////////////// */
+
+.footer{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: $grey;
+    color: $black;
+    display: grid;
+    grid-template-columns: repeat(12, 4rem);
+    grid-template-rows: repeat(3, 4rem);
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    ;
+}
+
+.copyright{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 2rem;
+}
+
+.socialLogo1  {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    color: black;   
+}
+
+.socialLogo2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.socialLink1 {
+    font-size: 10pt;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-left: 2rem;
+    text-decoration: none; 
+    color: $black;
+        &:hover{
+            color: $lila;
+        }
+}
+
+.socialLink2 {
+    font-size: 10pt;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-decoration: none; 
+    color: $black;
+        &:hover{
+            color: $lila;
+        }
+}
+
+
+/* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+
+
+.filtroGrande{
+    font-weight: 300; 
+    font-size: 16pt; 
+    color:#473BF0;
+    margin-left: 2rem;
+    margin-top: 1rem;  
+}
+
+.filtros{
+    font-weight:800;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+
+.iconoDetalles{
+    width: 1.5rem;
+}
+
+.textoFiltros{
+    font-weight: 400;
+    color: $black;
+    margin-right: 0.5rem;
+}
+
+.inputFiltro{
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0rem;
+    margin-right: 3rem;
+    width: 2rem;
+} 
+
+.cajasPropiedades{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 7rem);
+    grid-template-rows: repeat(31, 2rem);
+    margin-left: 1rem;
+}
+
+.fotoPropiedad{
+    width: 336px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.detallesPropiedadPeq{
+    font-weight: 200;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.propiedad1{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
+}
+
+.propiedad2{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white; 
+        &:hover{
+            scale: 102%;
+        }
+}
+
+.propiedad3{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
+}
+
+.propiedad4{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
+}
+
+.propiedad5{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
+}
+
+.propiedad6{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: #b5b8ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
+}
+
+
+.botonCargarMas{
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-weight: 400;
+    font-size: 16px;
+    background: $gradientRegular;
+    color: $white;
+    text-align: center;
+    border-radius: 5rem;
+        &:hover{
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            background: $gradientInverted;
+        }
+}
+
+/* -------------------------------PAGINA CONTACTO ------------------------------------ */
+.textoIntro{
+    font-weight: 300; 
+    font-size: 16pt; 
+    /*text-align: center; */
+    color: #473BF0; 
+    margin-left: 2rem;
+}
+
+.introForm{
+    font-weight: 300; 
+    color:$black;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.form-group{
+    font-size: 12pt;
+    font-weight: 300;
+    margin-left: 2rem; 
+    margin-right: 2rem;   
+}
+
+.form-control{
+    border-color: $lila;
+        &:hover{
+            color: $brightPurple;
+        }
+}
+
+.botonSubmit{
+    margin-left: 2rem;
+}
+
+
+/* -------------------------------PAGINA FAQ ------------------------------------ */
+/* Search */
+
+.form-inline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    border-color: $lavanda;
+}
+
+.btn-outline-success{
+    color: #ffffff;
+    background-color: $lila;
+    border-style: none;
+        &:hover{
+            color: #ffffff;
+            background-color:#473BF0;
+        }
+}
+
+
+/* accordion */
+
+.card{
+    background-color: #bdbfea23;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-style: none;
+}
+
+.card-header{
+    color: #473BF0;
+    background-color: #bdbfeabd;
+}
+
+.btn-link{
+    color: #473BF0;
+    text-decoration: none;
+}
+
+.card-body{
+    font-weight: 300;
+    color: $black;    
+}
+
+.btn-link{
+    color:#473BF0;
+}
+
+
+/* --------------------------------------------             MOBILE          ---------- ---------------------------------- */
+
+
+/* --------------        MOBILE     HOME          -------------- */
+@media only screen and (max-width: 375px){
+
+    /* SCROLL IZQUIERDO HOME */
+    .option1 {
+        margin-left: 0.5rem;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        font-weight: 500;
+        font-size: 10pt;
+        
+    }
+
+
+    .option2 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        font-weight: 500;
+        font-size: 10pt;
+    }
+
+    .option3 {
+        margin-left: 2rem;
+        grid-row-start: 10;
+        grid-row-end: 10;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display: none;
+    }
+
+
+    .cajas{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(10, 2rem);
+        grid-template-rows: repeat(46, 1rem);
+        margin-left: 1rem;
+    }
+
+
+    .cajaDePropiedad1{
+        z-index: 5;
+        grid-row-start: 7;
+        grid-row-end: 21;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        background-color: $lavanda;
+        border-radius: 0.5rem;
+        color: $white;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad2{
+        z-index: 4;
+        grid-row-start: 6;
+        grid-row-end: 20;
+        grid-column-start: 3;
+        grid-column-end: 8;
+        background-color: #a3a6d9;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad3{
+        z-index: 3;
+        grid-row-start: 5;
+        grid-row-end: 19;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        background-color: #aeb1ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad4{
+        z-index: 2;
+        grid-row-start: 4;
+        grid-row-end: 18;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: #b5b8ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad5{
+        z-index: 1;
+        grid-row-start: 3;
+        grid-row-end: 17;
+        grid-column-start: 6;
+        grid-column-end: 11;
+        background-color: #bdbfea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .imgPropiedad{
+        width: 160px;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+
+    .nombrePropiedad{
+        text-decoration: underline;
+        font-size: 9pt;
+        margin-top: 0.25rem;  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .precioPropiedad{
+        font-weight: 300;  
+        font-size: 9pt; 
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .detallesPropiedad{ 
+        font-weight: 200;
+        font-size: 9pt;
+        margin-left: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .ratingPropiedad{
+        font-size: 9pt;
+        margin-left: 0.5rem; 
+        display: inline;
+        line-height: 1rem;
+    }
+
+    .ratingStars{
+        width: 1rem;
+        height: auto;
+        display: inline;
+        line-height: 1rem;
+
+    }
+
+    .ctaPropiedades{ 
+        font-weight: 300;
+        font-size: 10pt;
+        color: $black;  
+        grid-column-start: 4;
+        grid-column-end: 10;
+        grid-row-start: 21;
+
+        
+    }
+
+    .ctaPropiedades img{
+        width: 1.5rem;
+        height: auto;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+
+    /*            banner HOME             */
+    .bannerAnuncio{
+        font-weight: 100;
+        font-size: 8pt;
+        background-color: #473BF0;
+        color: $white;
+        border-radius: 0.5rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 23;
+        grid-row-end: 29;
+    }
+
+    /* Cajas abajo HOME */
+    .option4 {
+        display: none;
+        margin-left: 2rem;
+        grid-row-start: 34;
+        grid-row-end: 34;
+        grid-column-start: 9;
+        grid-column-end: 12;
+    }
+
+
+    .option5 {
+        display: none;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        grid-row-start: 35;
+        grid-row-end: 35;
+        grid-column-start: 9;
+        grid-column-end: 12;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .option6 {    
+        display: none;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        grid-row-start: 36;
+        grid-row-end: 36;
+        grid-column-start: 9;
+        grid-column-end: 12;
+    }
+
+    .cajaDePropiedad6{
+        z-index: 5;
+        grid-row-start: 32;
+        grid-row-end: 46;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: $lavanda;
+        border-radius: 0.5rem;
+        color: $white;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+
+
+    .cajaDePropiedad7{
+        z-index: 4;
+        grid-row-start: 31;
+        grid-row-end: 45;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        background-color: #a3a6d9;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad8{
+        z-index: 3;
+        grid-row-start: 30;
+        grid-row-end: 44;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        background-color: #aeb1ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad9{
+        z-index: 2;
+        grid-row-start: 29;
+        grid-row-end: 43;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        background-color: #b5b8ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad10{
+        z-index: 1;
+        grid-row-start: 28;
+        grid-row-end: 42;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: #bdbfea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+}
+
+/* //////////////////////// footer mobile ////////////////////// */
+
+.footer{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: $grey;
+    color: $black;
+    display: grid;
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: repeat(4, 2rem);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    ;
+}
+
+.copyright{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 1rem;
+}
+
+.socialLogo1  {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;   
+}
+
+.socialLogo2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.socialLink1 {
+    font-size: 10pt;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-left: 1rem;
+    text-decoration: none; 
+    color: $black;
+}
+
+.socialLink2 {
+    font-size: 10pt;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-decoration: none; 
+    color: $black;
+}

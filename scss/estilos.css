@@ -12,6 +12,7 @@ p {
 a {
   color: #6665DD;
 }
+
 a:hover {
   color: #473BF0;
   text-decoration: underline;
@@ -21,23 +22,44 @@ a:hover {
 .navbar {
   background: white;
   color: #13262F;
+  position: -webkit-sticky;
   position: sticky;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .navbar-expand-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bg-light {
@@ -48,25 +70,45 @@ a:hover {
 .nav-link.active {
   margin-right: 1rem;
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nav-link.active:hover {
   text-decoration: underline;
   color: #473BF0;
-  text-decoration-color: #473BF0;
+  -webkit-text-decoration-color: #473BF0;
+          text-decoration-color: #473BF0;
 }
 
 .mainLogo {
   width: 170px;
   height: auto;
   margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* boton list your property */
@@ -75,6 +117,7 @@ a:hover {
   border-style: none;
   color: #ffffff;
 }
+
 .navbar .btn-primary:hover {
   text-decoration: none;
 }
@@ -82,9 +125,11 @@ a:hover {
 /* SCROLL IZQUIERDO HOME */
 .option1 {
   margin-left: 2rem;
-  grid-row-start: 8;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
   grid-row-end: 8;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 6;
   font-weight: 500;
   font-size: 1.5rem;
@@ -94,114 +139,158 @@ a:hover {
 .option2 {
   margin-left: 2rem;
   margin-top: 0.5rem;
-  grid-row-start: 9;
+  -ms-grid-row: 9;
+      grid-row-start: 9;
   grid-row-end: 9;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 6;
 }
 
 .option3 {
   margin-left: 2rem;
   margin-top: 0.5rem;
-  grid-row-start: 10;
+  -ms-grid-row: 10;
+      grid-row-start: 10;
   grid-row-end: 10;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 6;
 }
 
 /*                      PROPIEDADES HOME                */
 .cajas {
   margin-top: 2rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 6.5rem);
-  grid-template-rows: repeat(44, 2rem);
+  -ms-grid-columns: (6.5rem)[12];
+      grid-template-columns: repeat(12, 6.5rem);
+  -ms-grid-rows: (2rem)[44];
+      grid-template-rows: repeat(44, 2rem);
   margin-left: 2rem;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transform: translateZ(0px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transform-origin: 0 0;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
   margin: 0 -10px;
 }
 
 .cajaDePropiedad1 {
   z-index: 5;
-  grid-row-start: 5;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
   grid-row-end: 17;
-  grid-column-start: 5;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   background-color: #9B9ECE;
   border-radius: 0.5rem;
   color: white;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
+
 .cajaDePropiedad1:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .cajaDePropiedad2 {
   z-index: 4;
-  grid-row-start: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
   grid-row-end: 16;
-  grid-column-start: 6;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
   grid-column-end: 9;
   background-color: #a3a6d9;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad2:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad3 {
   z-index: 3;
-  grid-row-start: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 15;
-  grid-column-start: 7;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
   grid-column-end: 10;
   background-color: #aeb1ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad3:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad4 {
   z-index: 2;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 14;
-  grid-column-start: 8;
+  -ms-grid-column: 8;
+      grid-column-start: 8;
   grid-column-end: 11;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad4:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad5 {
   z-index: 1;
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 13;
-  grid-column-start: 9;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
   grid-column-end: 12;
   background-color: #bdbfea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad5:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .imgPropiedad {
@@ -241,11 +330,14 @@ a:hover {
 
 .ctaPropiedades {
   font-weight: 300;
-  grid-column-start: 9;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
   grid-column-end: 12;
-  grid-row-start: 18;
+  -ms-grid-row: 18;
+      grid-row-start: 18;
   padding: 0.5rem;
 }
+
 .ctaPropiedades:hover {
   color: #473BF0;
   text-decoration: underline;
@@ -262,37 +354,45 @@ a:hover {
 /*            banner HOME             */
 .btn-secondary {
   font-weight: 300;
-  background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  background: linear-gradient(331deg, #6665dd 0%, #473bf0 100%);
   color: white;
   border-radius: 0.5rem;
   margin: 2rem;
   padding-top: 0.5rem;
   text-align: center;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 12;
-  grid-row-start: 20;
+  -ms-grid-row: 20;
+      grid-row-start: 20;
   grid-row-end: 24;
 }
+
 .btn-secondary:hover {
-  background: linear-gradient(-331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  background: linear-gradient(-331deg, #6665dd 0%, #473bf0 100%);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 /* Cajas abajo HOME */
 .option4 {
   margin-left: 2rem;
-  grid-row-start: 34;
+  -ms-grid-row: 34;
+      grid-row-start: 34;
   grid-row-end: 34;
-  grid-column-start: 10;
+  -ms-grid-column: 10;
+      grid-column-start: 10;
   grid-column-end: 12;
 }
 
 .option5 {
   margin-left: 2rem;
   margin-top: 0.5rem;
-  grid-row-start: 35;
+  -ms-grid-row: 35;
+      grid-row-start: 35;
   grid-row-end: 35;
-  grid-column-start: 10;
+  -ms-grid-column: 10;
+      grid-column-start: 10;
   grid-column-end: 12;
   font-weight: 500;
   font-size: 1.5rem;
@@ -301,91 +401,124 @@ a:hover {
 .option6 {
   margin-left: 2rem;
   margin-top: 0.5rem;
-  grid-row-start: 36;
+  -ms-grid-row: 36;
+      grid-row-start: 36;
   grid-row-end: 36;
-  grid-column-start: 10;
+  -ms-grid-column: 10;
+      grid-column-start: 10;
   grid-column-end: 12;
 }
 
 .cajaDePropiedad6 {
   z-index: 5;
-  grid-row-start: 29;
+  -ms-grid-row: 29;
+      grid-row-start: 29;
   grid-row-end: 41;
-  grid-column-start: 6;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
   grid-column-end: 9;
   background-color: #9B9ECE;
   border-radius: 0.5rem;
   color: white;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
+
 .cajaDePropiedad6:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad7 {
   z-index: 4;
-  grid-row-start: 28;
+  -ms-grid-row: 28;
+      grid-row-start: 28;
   grid-row-end: 40;
-  grid-column-start: 5;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   background-color: #a3a6d9;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad7:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad8 {
   z-index: 3;
-  grid-row-start: 27;
+  -ms-grid-row: 27;
+      grid-row-start: 27;
   grid-row-end: 39;
-  grid-column-start: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
   grid-column-end: 7;
   background-color: #aeb1ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad8:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad9 {
   z-index: 2;
-  grid-row-start: 26;
+  -ms-grid-row: 26;
+      grid-row-start: 26;
   grid-row-end: 38;
-  grid-column-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   grid-column-end: 6;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad9:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad10 {
   z-index: 1;
-  grid-row-start: 25;
+  -ms-grid-row: 25;
+      grid-row-start: 25;
   grid-row-end: 37;
-  grid-column-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: 5;
   background-color: #bdbfea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .cajaDePropiedad10:hover {
-  transform: translateZ(60px);
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
 }
 
 /* //////////////////////// footer ////////////////////// */
@@ -394,25 +527,32 @@ a:hover {
   padding-top: 1rem;
   background-color: #ACADBC;
   color: #13262F;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 4rem);
-  grid-template-rows: repeat(3, 4rem);
+  -ms-grid-columns: (4rem)[12];
+      grid-template-columns: repeat(12, 4rem);
+  -ms-grid-rows: (4rem)[3];
+      grid-template-rows: repeat(3, 4rem);
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
 }
 
 .copyright {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 8;
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 1;
   margin-left: 2rem;
 }
 
 .socialLogo1 {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
   width: 3rem;
   height: 3rem;
@@ -422,9 +562,11 @@ a:hover {
 }
 
 .socialLogo2 {
-  grid-column-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
   width: 3rem;
   height: 3rem;
@@ -434,27 +576,33 @@ a:hover {
 
 .socialLink1 {
   font-size: 10pt;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 3;
   margin-left: 2rem;
   text-decoration: none;
   color: #13262F;
 }
+
 .socialLink1:hover {
   color: #6665DD;
 }
 
 .socialLink2 {
   font-size: 10pt;
-  grid-column-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 3;
   text-decoration: none;
   color: #13262F;
 }
+
 .socialLink2:hover {
   color: #6665DD;
 }
@@ -471,10 +619,19 @@ a:hover {
 .filtros {
   font-weight: 800;
   color: #13262F;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 1rem;
   margin-left: 2rem;
 }
@@ -499,9 +656,12 @@ a:hover {
 
 .cajasPropiedades {
   margin-top: 2rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 7rem);
-  grid-template-rows: repeat(31, 2rem);
+  -ms-grid-columns: (7rem)[12];
+      grid-template-columns: repeat(12, 7rem);
+  -ms-grid-rows: (2rem)[31];
+      grid-template-rows: repeat(31, 2rem);
   margin-left: 1rem;
 }
 
@@ -514,106 +674,137 @@ a:hover {
 .detallesPropiedadPeq {
   font-weight: 200;
   font-size: 12pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 12rem;
 }
 
 .propiedad1 {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 13;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 4;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad1:hover {
   scale: 102%;
 }
 
 .propiedad2 {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 13;
-  grid-column-start: 5;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad2:hover {
   scale: 102%;
 }
 
 .propiedad3 {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 13;
-  grid-column-start: 9;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
   grid-column-end: 12;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad3:hover {
   scale: 102%;
 }
 
 .propiedad4 {
-  grid-row-start: 15;
+  -ms-grid-row: 15;
+      grid-row-start: 15;
   grid-row-end: 27;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 4;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad4:hover {
   scale: 102%;
 }
 
 .propiedad5 {
-  grid-row-start: 15;
+  -ms-grid-row: 15;
+      grid-row-start: 15;
   grid-row-end: 27;
-  grid-column-start: 5;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad5:hover {
   scale: 102%;
 }
 
 .propiedad6 {
-  grid-row-start: 15;
+  -ms-grid-row: 15;
+      grid-row-start: 15;
   grid-row-end: 27;
-  grid-column-start: 9;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
   grid-column-end: 12;
   background-color: #b5b8ea;
   border-radius: 0.5rem;
   color: white;
 }
+
 .propiedad6:hover {
   scale: 102%;
 }
 
 .botonCargarMas {
-  grid-row-start: 29;
+  -ms-grid-row: 29;
+      grid-row-start: 29;
   grid-row-end: 30;
-  grid-column-start: 5;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
   grid-column-end: 8;
   font-weight: 400;
   font-size: 16px;
-  background: linear-gradient(331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  background: linear-gradient(331deg, #6665dd 0%, #473bf0 100%);
   color: white;
   text-align: center;
   border-radius: 5rem;
 }
+
 .botonCargarMas:hover {
-  box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
-  background: linear-gradient(-331deg, rgb(102, 101, 221) 0%, rgb(71, 59, 240) 100%);
+  -webkit-box-shadow: 3px 2px 10px #473BF052;
+          box-shadow: 3px 2px 10px #473BF052;
+  background: linear-gradient(-331deg, #6665dd 0%, #473bf0 100%);
 }
 
 /* -------------------------------PAGINA CONTACTO ------------------------------------ */
@@ -643,6 +834,7 @@ a:hover {
 .form-control {
   border-color: #6665DD;
 }
+
 .form-control:hover {
   color: #473BF0;
 }
@@ -654,9 +846,15 @@ a:hover {
 /* -------------------------------PAGINA FAQ ------------------------------------ */
 /* Search */
 .form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 2rem;
   margin-bottom: 2rem;
 }
@@ -670,6 +868,7 @@ a:hover {
   background-color: #6665DD;
   border-style: none;
 }
+
 .btn-outline-success:hover {
   color: #ffffff;
   background-color: #473BF0;
@@ -677,7 +876,7 @@ a:hover {
 
 /* accordion */
 .card {
-  background-color: rgba(189, 191, 234, 0.137254902);
+  background-color: #bdbfea23;
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -686,7 +885,7 @@ a:hover {
 
 .card-header {
   color: #473BF0;
-  background-color: rgba(189, 191, 234, 0.7411764706);
+  background-color: #bdbfeabd;
 }
 
 .btn-link {
@@ -709,102 +908,112 @@ a:hover {
   /* SCROLL IZQUIERDO HOME */
   .option1 {
     margin-left: 0.5rem;
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 6;
     font-weight: 500;
     font-size: 10pt;
   }
-
   .option2 {
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 6;
+    -ms-grid-column: 6;
+        grid-column-start: 6;
     grid-column-end: 10;
     font-weight: 500;
     font-size: 10pt;
   }
-
   .option3 {
     margin-left: 2rem;
-    grid-row-start: 10;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
     grid-row-end: 10;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 6;
     display: none;
   }
-
   .cajas {
     margin-top: 1rem;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(10, 2rem);
-    grid-template-rows: repeat(46, 1rem);
+    -ms-grid-columns: (2rem)[10];
+        grid-template-columns: repeat(10, 2rem);
+    -ms-grid-rows: (1rem)[46];
+        grid-template-rows: repeat(46, 1rem);
     margin-left: 1rem;
   }
-
   .cajaDePropiedad1 {
     z-index: 5;
-    grid-row-start: 7;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
     grid-row-end: 21;
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 7;
     background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: white;
-    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+    -webkit-box-shadow: 3px 2px 10px #473BF052;
+            box-shadow: 3px 2px 10px #473BF052;
   }
-
   .cajaDePropiedad2 {
     z-index: 4;
-    grid-row-start: 6;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
     grid-row-end: 20;
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 8;
     background-color: #a3a6d9;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad3 {
     z-index: 3;
-    grid-row-start: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
     grid-row-end: 19;
-    grid-column-start: 4;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
     grid-column-end: 9;
     background-color: #aeb1ea;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad4 {
     z-index: 2;
-    grid-row-start: 4;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
     grid-row-end: 18;
-    grid-column-start: 5;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
     grid-column-end: 10;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad5 {
     z-index: 1;
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 17;
-    grid-column-start: 6;
+    -ms-grid-column: 6;
+        grid-column-start: 6;
     grid-column-end: 11;
     background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
   }
-
   .imgPropiedad {
     width: 160px;
     height: auto;
     border-radius: 0.5rem 0.5rem 0 0;
   }
-
   .nombrePropiedad {
     text-decoration: underline;
     font-size: 9pt;
@@ -812,51 +1021,46 @@ a:hover {
     margin-left: 0.5rem;
     line-height: 1rem;
   }
-
   .precioPropiedad {
     font-weight: 300;
     font-size: 9pt;
     margin-left: 0.5rem;
     line-height: 1rem;
   }
-
   .detallesPropiedad {
     font-weight: 200;
     font-size: 9pt;
     margin-left: 0.5rem;
     line-height: 1.5rem;
   }
-
   .ratingPropiedad {
     font-size: 9pt;
     margin-left: 0.5rem;
     display: inline;
     line-height: 1rem;
   }
-
   .ratingStars {
     width: 1rem;
     height: auto;
     display: inline;
     line-height: 1rem;
   }
-
   .ctaPropiedades {
     font-weight: 300;
     font-size: 10pt;
     color: #13262F;
-    grid-column-start: 4;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
     grid-column-end: 10;
-    grid-row-start: 21;
+    -ms-grid-row: 21;
+        grid-row-start: 21;
   }
-
   .ctaPropiedades img {
     width: 1.5rem;
     height: auto;
     vertical-align: middle;
     text-decoration: none;
   }
-
   /*            banner HOME             */
   .bannerAnuncio {
     font-weight: 100;
@@ -866,125 +1070,144 @@ a:hover {
     border-radius: 0.5rem;
     padding-top: 0.5rem;
     text-align: center;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 10;
-    grid-row-start: 23;
+    -ms-grid-row: 23;
+        grid-row-start: 23;
     grid-row-end: 29;
   }
-
   /* Cajas abajo HOME */
   .option4 {
     display: none;
     margin-left: 2rem;
-    grid-row-start: 34;
+    -ms-grid-row: 34;
+        grid-row-start: 34;
     grid-row-end: 34;
-    grid-column-start: 9;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
     grid-column-end: 12;
   }
-
   .option5 {
     display: none;
     margin-left: 2rem;
     margin-top: 0.5rem;
-    grid-row-start: 35;
+    -ms-grid-row: 35;
+        grid-row-start: 35;
     grid-row-end: 35;
-    grid-column-start: 9;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
     grid-column-end: 12;
     font-weight: 500;
     font-size: 1.5rem;
   }
-
   .option6 {
     display: none;
     margin-left: 2rem;
     margin-top: 0.5rem;
-    grid-row-start: 36;
+    -ms-grid-row: 36;
+        grid-row-start: 36;
     grid-row-end: 36;
-    grid-column-start: 9;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
     grid-column-end: 12;
   }
-
   .cajaDePropiedad6 {
     z-index: 5;
-    grid-row-start: 32;
+    -ms-grid-row: 32;
+        grid-row-start: 32;
     grid-row-end: 46;
-    grid-column-start: 5;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
     grid-column-end: 10;
     background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: white;
-    box-shadow: 3px 2px 10px rgba(71, 59, 240, 0.3215686275);
+    -webkit-box-shadow: 3px 2px 10px #473BF052;
+            box-shadow: 3px 2px 10px #473BF052;
   }
-
   .cajaDePropiedad7 {
     z-index: 4;
-    grid-row-start: 31;
+    -ms-grid-row: 31;
+        grid-row-start: 31;
     grid-row-end: 45;
-    grid-column-start: 4;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
     grid-column-end: 7;
     background-color: #a3a6d9;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad8 {
     z-index: 3;
-    grid-row-start: 30;
+    -ms-grid-row: 30;
+        grid-row-start: 30;
     grid-row-end: 44;
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 6;
     background-color: #aeb1ea;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad9 {
     z-index: 2;
-    grid-row-start: 29;
+    -ms-grid-row: 29;
+        grid-row-start: 29;
     grid-row-end: 43;
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 5;
     background-color: #b5b8ea;
     border-radius: 0.5rem;
     color: white;
   }
-
   .cajaDePropiedad10 {
     z-index: 1;
-    grid-row-start: 28;
+    -ms-grid-row: 28;
+        grid-row-start: 28;
     grid-row-end: 42;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 4;
     background-color: #bdbfea;
     border-radius: 0.5rem;
     color: white;
   }
 }
+
 /* //////////////////////// footer mobile ////////////////////// */
 .footer {
   margin-top: 2rem;
   padding-top: 1rem;
   background-color: #ACADBC;
   color: #13262F;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 4rem);
-  grid-template-rows: repeat(4, 2rem);
+  -ms-grid-columns: (4rem)[5];
+      grid-template-columns: repeat(5, 4rem);
+  -ms-grid-rows: (2rem)[4];
+      grid-template-rows: repeat(4, 2rem);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 }
 
 .copyright {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 1;
   margin-left: 1rem;
 }
 
 .socialLogo1 {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
   width: 2rem;
   height: 2rem;
@@ -994,9 +1217,11 @@ a:hover {
 }
 
 .socialLogo2 {
-  grid-column-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
   width: 2rem;
   height: 2rem;
@@ -1006,9 +1231,11 @@ a:hover {
 
 .socialLink1 {
   font-size: 10pt;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 3;
   margin-left: 1rem;
   text-decoration: none;
@@ -1017,12 +1244,13 @@ a:hover {
 
 .socialLink2 {
   font-size: 10pt;
-  grid-column-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 3;
   text-decoration: none;
   color: #13262F;
 }
-
 /*# sourceMappingURL=estilos.css.map */
