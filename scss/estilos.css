@@ -194,8 +194,8 @@ a:hover {
   background-color: #9B9ECE;
   border-radius: 0.5rem;
   color: white;
-  -webkit-box-shadow: 3px 2px 10px #473BF052;
-          box-shadow: 3px 2px 10px #473BF052;
+  -webkit-box-shadow: 3px 2px 10px #473bf052;
+          box-shadow: 3px 2px 10px #473bf052;
 }
 
 .cajaDePropiedad1:hover {
@@ -429,8 +429,6 @@ a:hover {
           transform: translateZ(60px);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-box-shadow: 3px 2px 10px #473BF052;
-          box-shadow: 3px 2px 10px #473BF052;
 }
 
 .cajaDePropiedad7 {
@@ -608,6 +606,49 @@ a:hover {
 }
 
 /* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+.tarjetaSingular {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+}
+
+.abajoCard {
+  background-color: #b5b8ea;
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: white !important;
+}
+
+.foto {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.namePropiedad {
+  text-decoration: underline;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.pricePropiedad {
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.detailsPropiedad {
+  font-weight: 300;
+}
+
+.rating {
+  font-size: 12pt;
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
+.ratingStars {
+  width: 1rem;
+  height: auto;
+  display: inline;
+  margin-bottom: 0.5rem;
+}
+
 .filtroGrande {
   font-weight: 300;
   font-size: 16pt;
@@ -654,138 +695,108 @@ a:hover {
   width: 2rem;
 }
 
-.cajasPropiedades {
-  margin-top: 2rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (7rem)[12];
-      grid-template-columns: repeat(12, 7rem);
-  -ms-grid-rows: (2rem)[31];
-      grid-template-rows: repeat(31, 2rem);
-  margin-left: 1rem;
+/*.cajasPropiedades{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 7rem);
+    grid-template-rows: repeat(31, 2rem);
+    margin-left: 1rem;
 }
 
-.fotoPropiedad {
-  width: 336px;
-  height: auto;
-  border-radius: 0.5rem 0.5rem 0 0;
+.fotoPropiedad{
+    width: 336px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.detallesPropiedadPeq {
-  font-weight: 200;
-  font-size: 12pt;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 12rem;
+.detallesPropiedadPeq{
+    font-weight: 200;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12rem;
 }
 
-.propiedad1 {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 13;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
+.propiedad1{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
 }
 
-.propiedad1:hover {
-  scale: 102%;
+.propiedad2{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white; 
+        &:hover{
+            scale: 102%;
+        }
 }
 
-.propiedad2 {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 13;
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-  grid-column-end: 8;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
+.propiedad3{
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
 }
 
-.propiedad2:hover {
-  scale: 102%;
+.propiedad4{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
 }
 
-.propiedad3 {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 13;
-  -ms-grid-column: 9;
-      grid-column-start: 9;
-  grid-column-end: 12;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
+.propiedad5{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
 }
 
-.propiedad3:hover {
-  scale: 102%;
+.propiedad6{
+    grid-row-start: 15;
+    grid-row-end: 27;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            scale: 102%;
+        }
 }
-
-.propiedad4 {
-  -ms-grid-row: 15;
-      grid-row-start: 15;
-  grid-row-end: 27;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.propiedad4:hover {
-  scale: 102%;
-}
-
-.propiedad5 {
-  -ms-grid-row: 15;
-      grid-row-start: 15;
-  grid-row-end: 27;
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-  grid-column-end: 8;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.propiedad5:hover {
-  scale: 102%;
-}
-
-.propiedad6 {
-  -ms-grid-row: 15;
-      grid-row-start: 15;
-  grid-row-end: 27;
-  -ms-grid-column: 9;
-      grid-column-start: 9;
-  grid-column-end: 12;
-  background-color: #b5b8ea;
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.propiedad6:hover {
-  scale: 102%;
-}
-
+*/
 .botonCargarMas {
   -ms-grid-row: 29;
       grid-row-start: 29;
@@ -798,6 +809,20 @@ a:hover {
   background: linear-gradient(331deg, #6665dd 0%, #473bf0 100%);
   color: white;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
   border-radius: 5rem;
 }
 

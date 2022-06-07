@@ -8,6 +8,7 @@ $lavanda: #9B9ECE;
 $black: #13262F;
 $grey: #ACADBC;
 $white: white;
+$lightLavanda: #b5b8ea;
 $gradientRegular: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 $gradientInverted: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 
@@ -138,7 +139,6 @@ a{
     grid-template-columns: repeat(12, 6.5rem);
     grid-template-rows: repeat(44, 2rem);
     margin-left: 2rem;
-
     transform-style: preserve-3d;
     perspective: 1000px;
     transform: translateZ(0px);
@@ -154,16 +154,15 @@ a{
     grid-row-end: 17;
     grid-column-start: 5;
     grid-column-end: 8;
-    background-color: $lavanda;
+    background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: $white;
-    box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    box-shadow: 3px 2px 10px #473bf052;
         &:hover{
             transform: translateZ(60px);
-            transition: 0.4s;  
+            transition: 0.4s;    
         }
 }
-
 
 .cajaDePropiedad2{
     z-index: 4;
@@ -176,9 +175,9 @@ a{
     color: $white;
         &:hover{
             transform: translateZ(60px);
-            transition: 0.4s;  
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        }    
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
 }
 
 .cajaDePropiedad3{
@@ -192,9 +191,9 @@ a{
     color: $white;
         &:hover{
             transform: translateZ(60px);
-            transition: 0.4s;  
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        }   
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
 }
 
 .cajaDePropiedad4{
@@ -203,14 +202,14 @@ a{
     grid-row-end: 14;
     grid-column-start:8;
     grid-column-end: 11;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
             transform: translateZ(60px);
-            transition: 0.4s;  
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        }   
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
 }
 
 .cajaDePropiedad5{
@@ -224,9 +223,9 @@ a{
     color: $white;
         &:hover{
             transform: translateZ(60px);
-            transition: 0.4s;  
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        }   
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
 }
 
 .imgPropiedad{
@@ -265,6 +264,7 @@ a{
 }
 
 .ctaPropiedades{
+
     font-weight: 300; 
     grid-column-start: 9;
     grid-column-end: 12;
@@ -273,17 +273,17 @@ a{
         &:hover{
             color: $brightPurple;
             text-decoration: underline;
-        }  
+        }
 }
+
 
 .ctaPropiedades img{
     width: 1.5rem;
     height: auto;
     margin-left: 0.5rem;
     vertical-align: middle;
-    text-decoration: none; 
+    text-decoration: none;
 }
-
 
 /*            banner HOME             */
 
@@ -298,13 +298,12 @@ a{
     grid-column-start: 1;
     grid-column-end: 12;
     grid-row-start: 20;
-    grid-row-end: 24; 
+    grid-row-end: 24;   
         &:hover{
             background: $gradientInverted;    
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
-        }   
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;    
+        } 
 }
-
 
 /* Cajas abajo HOME */
 .option4 {
@@ -342,15 +341,14 @@ a{
     grid-row-end: 41;
     grid-column-start: 6;
     grid-column-end: 9;
-    background-color: $lavanda;
+    background-color: #9B9ECE;
     border-radius: 0.5rem;
     color: $white;
     box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        &:hover{
-            transform: translateZ(60px);
-            transition: 0.4s;
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
-        }
+    &:hover{
+        transform: translateZ(60px);
+        transition: 0.4s;
+    }
 }
 
 .cajaDePropiedad7{
@@ -365,7 +363,7 @@ a{
         &:hover{
             transform: translateZ(60px);
             transition: 0.4s;
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
         }
 }
 
@@ -381,7 +379,7 @@ a{
         &:hover{
             transform: translateZ(60px);
             transition: 0.4s;
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
         }
 }
 
@@ -391,13 +389,13 @@ a{
     grid-row-end: 38;
     grid-column-start: 3;
     grid-column-end: 6;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
             transform: translateZ(60px);
             transition: 0.4s;
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
         }
 }
 
@@ -413,9 +411,10 @@ a{
         &:hover{
             transform: translateZ(60px);
             transition: 0.4s;
-            box-shadow: 3px 2px 10px $brightPurpleOpacity;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
         }
 }
+
 
 /* //////////////////////// footer ////////////////////// */
 
@@ -492,7 +491,48 @@ a{
 
 
 /* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+.tarjetaSingular{
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+}
 
+.abajoCard{
+    background-color: $lightLavanda;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: $white !important; 
+}
+
+.foto{
+    border-radius: 0.5rem 0.5rem 0 0;  
+}
+
+.namePropiedad{
+    text-decoration: underline;
+    color: $white;
+    margin-bottom: 0.5rem;
+}
+
+.pricePropiedad{
+    font-weight: 400;  
+    line-height: 1rem;  
+}
+
+.detailsPropiedad{
+    font-weight: 300;
+}
+
+.rating{
+    font-size: 12pt;
+    display: inline;
+    margin-bottom: 0.5rem;
+}
+
+.ratingStars{
+    width: 1rem;
+    height: auto;
+    display: inline;
+    margin-bottom: 0.5rem;
+}
 
 .filtroGrande{
     font-weight: 300; 
@@ -532,7 +572,8 @@ a{
     width: 2rem;
 } 
 
-.cajasPropiedades{
+
+/*.cajasPropiedades{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(12, 7rem);
@@ -561,7 +602,7 @@ a{
     grid-row-end: 13;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
@@ -574,7 +615,7 @@ a{
     grid-row-end: 13;
     grid-column-start: 5;
     grid-column-end: 8;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white; 
         &:hover{
@@ -587,7 +628,7 @@ a{
     grid-row-end: 13;
     grid-column-start: 9;
     grid-column-end: 12;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
@@ -600,7 +641,7 @@ a{
     grid-row-end: 27;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
@@ -613,7 +654,7 @@ a{
     grid-row-end: 27;
     grid-column-start: 5;
     grid-column-end: 8;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
@@ -626,14 +667,14 @@ a{
     grid-row-end: 27;
     grid-column-start: 9;
     grid-column-end: 12;
-    background-color: #b5b8ea;
+    background-color: $lightLavanda;
     border-radius: 0.5rem;
     color: $white;
         &:hover{
             scale: 102%;
         }
 }
-
+*/
 
 .botonCargarMas{
     grid-row-start: 29;
@@ -645,6 +686,11 @@ a{
     background: $gradientRegular;
     color: $white;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
     border-radius: 5rem;
         &:hover{
             box-shadow: 3px 2px 10px $brightPurpleOpacity;
@@ -832,7 +878,7 @@ a{
         grid-row-end: 18;
         grid-column-start: 5;
         grid-column-end: 10;
-        background-color: #b5b8ea;
+        background-color: $lightLavanda;
         border-radius: 0.5rem;
         color: $white;
     }
@@ -1001,7 +1047,7 @@ a{
         grid-row-end: 43;
         grid-column-start: 2;
         grid-column-end: 5;
-        background-color: #b5b8ea;
+        background-color: $lightLavanda;
         border-radius: 0.5rem;
         color: $white;
     }
