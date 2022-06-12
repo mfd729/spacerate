@@ -1,0 +1,583 @@
+.option1 {
+    margin-left: 2rem;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-weight: 500;
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+
+.option2 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.option3 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+
+/*                      PROPIEDADES HOME                */
+
+.cajas{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 6.5rem);
+    grid-template-rows: repeat(44, 2rem);
+    margin-left: 2rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(0px);
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    margin: 0 -10px
+}
+
+
+.cajaDePropiedad1{
+    z-index: 5;
+    grid-row-start: 5;
+    grid-row-end: 17;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: $white;
+    box-shadow: 3px 2px 10px #473bf052;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;    
+        }
+}
+
+.cajaDePropiedad2{
+    z-index: 4;
+    grid-row-start: 4;
+    grid-row-end: 16;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad3{
+    z-index: 3;
+    grid-row-start: 3;
+    grid-row-end: 15;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad4{
+    z-index: 2;
+    grid-row-start: 2;
+    grid-row-end: 14;
+    grid-column-start:8;
+    grid-column-end: 11;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad5{
+    z-index: 1;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.imgPropiedad{
+    width: 312px;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nombrePropiedad{
+    text-decoration: underline;
+    font-size: 16pt;
+    margin-top: 0.5rem;  
+    margin-left: 1rem;
+}
+
+.precioPropiedad{
+    font-weight: 400;   
+    margin-left: 1rem;
+}
+
+.detallesPropiedad{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.ratingPropiedad{
+    font-size: 12pt;
+    margin-left: 1rem; 
+    display: inline;
+}
+
+.ratingStars{
+    width: 1rem;
+    height: auto;
+    display: inline;
+}
+
+.ctaPropiedades{
+    font-weight: 300; 
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 18;
+    padding: 0.5rem;
+        &:hover{
+            color: $brightPurple;
+            text-decoration: underline;
+        }
+}
+
+
+.ctaPropiedades img{
+    width: 1.5rem;
+    height: auto;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/*            banner HOME             */
+
+.btn-secondary{  
+    font-weight: 300;
+    background: $gradientRegular;
+    color: $white;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 20;
+    grid-row-end: 24;   
+        &:hover{
+            background: $gradientInverted;    
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;    
+        } 
+}
+
+/* Cajas abajo HOME */
+.option4 {
+    margin-left: 2rem;
+    grid-row-start: 34;
+    grid-row-end: 34;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+
+.option5 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 35;
+    grid-row-end: 35;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.option6 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    grid-row-start: 36;
+    grid-row-end: 36;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+.cajaDePropiedad6{
+    z-index: 5;
+    grid-row-start: 29;
+    grid-row-end: 41;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    background-color: #9B9ECE;
+    border-radius: 0.5rem;
+    color: $white;
+    box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    &:hover{
+        transform: translateZ(60px);
+        transition: 0.4s;
+    }
+}
+
+.cajaDePropiedad7{
+    z-index: 4;
+    grid-row-start: 28;
+    grid-row-end: 40;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: #a3a6d9;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad8{
+    z-index: 3;
+    grid-row-start: 27;
+    grid-row-end: 39;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color: #aeb1ea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad9{
+    z-index: 2;
+    grid-row-start: 26;
+    grid-row-end: 38;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: $lightLavanda;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}
+
+.cajaDePropiedad10{
+    z-index: 1;
+    grid-row-start: 25;
+    grid-row-end: 37;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #bdbfea;
+    border-radius: 0.5rem;
+    color: $white;
+        &:hover{
+            transform: translateZ(60px);
+            transition: 0.4s;
+            box-shadow: 3px 2px 10px $brightPurpleOpacity;  
+        }
+}  
+
+
+/* --------------        MOBILE     HOME          -------------- */
+@media only screen and (max-width: 375px){
+
+    /* SCROLL IZQUIERDO HOME */
+    .option1 {
+        margin-left: 0.5rem;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        font-weight: 500;
+        font-size: 10pt;
+    }
+
+
+    .option2 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        font-weight: 500;
+        font-size: 10pt;
+    }
+
+    .option3 {
+        margin-left: 2rem;
+        grid-row-start: 10;
+        grid-row-end: 10;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display: none;
+    }
+
+
+    .cajas{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(10, 2rem);
+        grid-template-rows: repeat(46, 1rem);
+        margin-left: 1rem;
+    }
+
+
+    .cajaDePropiedad1{
+        z-index: 5;
+        grid-row-start: 7;
+        grid-row-end: 21;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        background-color: $lavanda;
+        border-radius: 0.5rem;
+        color: $white;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+    .cajaDePropiedad2{
+        z-index: 4;
+        grid-row-start: 6;
+        grid-row-end: 20;
+        grid-column-start: 3;
+        grid-column-end: 8;
+        background-color: #a3a6d9;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad3{
+        z-index: 3;
+        grid-row-start: 5;
+        grid-row-end: 19;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        background-color: #aeb1ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad4{
+        z-index: 2;
+        grid-row-start: 4;
+        grid-row-end: 18;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: $lightLavanda;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad5{
+        z-index: 1;
+        grid-row-start: 3;
+        grid-row-end: 17;
+        grid-column-start: 6;
+        grid-column-end: 11;
+        background-color: #bdbfea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .imgPropiedad{
+        width: 160px;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+
+    .nombrePropiedad{
+        text-decoration: underline;
+        font-size: 9pt;
+        margin-top: 0.25rem;  
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .precioPropiedad{
+        font-weight: 300;  
+        font-size: 9pt; 
+        margin-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .detallesPropiedad{ 
+        font-weight: 200;
+        font-size: 9pt;
+        margin-left: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .ratingPropiedad{
+        font-size: 9pt;
+        margin-left: 0.5rem; 
+        display: inline;
+        line-height: 1rem;
+    }
+
+    .ratingStars{
+        width: 1rem;
+        height: auto;
+        display: inline;
+        line-height: 1rem;
+
+    }
+
+    .ctaPropiedades{ 
+        font-weight: 300;
+        font-size: 10pt;
+        color: $black;  
+        grid-column-start: 4;
+        grid-column-end: 10;
+        grid-row-start: 21;
+
+        
+    }
+
+    .ctaPropiedades img{
+        width: 1.5rem;
+        height: auto;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+
+    /*            banner HOME             */
+    .bannerAnuncio{
+        font-weight: 100;
+        font-size: 8pt;
+        background-color: #473BF0;
+        color: $white;
+        border-radius: 0.5rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 23;
+        grid-row-end: 29;
+    }
+
+    /* Cajas abajo HOME */
+    .option4 {
+        display: none;
+        margin-left: 2rem;
+        grid-row-start: 34;
+        grid-row-end: 34;
+        grid-column-start: 9;
+        grid-column-end: 12;
+    }
+
+
+    .option5 {
+        display: none;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        grid-row-start: 35;
+        grid-row-end: 35;
+        grid-column-start: 9;
+        grid-column-end: 12;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .option6 {    
+        display: none;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        grid-row-start: 36;
+        grid-row-end: 36;
+        grid-column-start: 9;
+        grid-column-end: 12;
+    }
+
+    .cajaDePropiedad6{
+        z-index: 5;
+        grid-row-start: 32;
+        grid-row-end: 46;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        background-color: $lavanda;
+        border-radius: 0.5rem;
+        color: $white;
+        box-shadow: 3px 2px 10px $brightPurpleOpacity;
+    }
+
+
+
+    .cajaDePropiedad7{
+        z-index: 4;
+        grid-row-start: 31;
+        grid-row-end: 45;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        background-color: #a3a6d9;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad8{
+        z-index: 3;
+        grid-row-start: 30;
+        grid-row-end: 44;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        background-color: #aeb1ea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad9{
+        z-index: 2;
+        grid-row-start: 29;
+        grid-row-end: 43;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        background-color: $lightLavanda;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    .cajaDePropiedad10{
+        z-index: 1;
+        grid-row-start: 28;
+        grid-row-end: 42;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: #bdbfea;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+}
