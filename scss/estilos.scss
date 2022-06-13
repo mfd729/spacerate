@@ -12,7 +12,6 @@ $lightLavanda: #b5b8ea;
 $gradientRegular: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 $gradientInverted: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 
-@use "sass:map";
 
 $typeSizes: (
     xs: 8pt,
@@ -21,6 +20,7 @@ $typeSizes: (
     lg: 12pt,
     xl: 16pt
 );
+
 
 *{
     margin: 0;
@@ -137,7 +137,7 @@ a{
     grid-column-start: 5;
     grid-column-end: 8;
     font-weight: 400;
-    font-size: map-get($typeSizes, xl); 
+    font-size: map-get($typeSizes, lg); 
     background: $gradientRegular;
     color: $white;
     text-align: center;
