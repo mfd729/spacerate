@@ -12,6 +12,15 @@ $lightLavanda: #b5b8ea;
 $gradientRegular: linear-gradient(331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 $gradientInverted: linear-gradient(-331deg, rgba(102,101,221,1) 0%, rgba(71,59,240,1) 100%);
 
+@use "sass:map";
+
+$typeSizes: (
+    xs: 8pt,
+    sm: 9pt,
+    md: 10pt,
+    lg: 12pt,
+    xl: 16pt
+);
 
 *{
     margin: 0;
@@ -72,7 +81,7 @@ a{
 }
 
 .rating{
-    font-size: 12pt;
+    font-size: map-get($typeSizes, lg); 
     display: inline;
     margin-bottom: 0.5rem;
 }
@@ -86,8 +95,8 @@ a{
 
 .filtroGrande{
     font-weight: 300; 
-    font-size: 16pt; 
-    color:#473BF0;
+    font-size: map-get($typeSizes, xl); 
+    color:$brightPurple;
     margin-left: 2rem;
     margin-top: 1rem;  
 }
@@ -128,7 +137,7 @@ a{
     grid-column-start: 5;
     grid-column-end: 8;
     font-weight: 400;
-    font-size: 16px;
+    font-size: map-get($typeSizes, xl); 
     background: $gradientRegular;
     color: $white;
     text-align: center;
@@ -147,9 +156,8 @@ a{
 /* -------------------------------PAGINA CONTACTO ------------------------------------ */
 .textoIntro{
     font-weight: 300; 
-    font-size: 16pt; 
-    /*text-align: center; */
-    color: #473BF0; 
+    font-size: map-get($typeSizes, xl); 
+    color: $brightPurple; 
     margin-left: 2rem;
 }
 
@@ -163,7 +171,7 @@ a{
 }
 
 .form-group{
-    font-size: 12pt;
+    font-size: map-get($typeSizes, lg); 
     font-weight: 300;
     margin-left: 2rem; 
     margin-right: 2rem;   
@@ -202,7 +210,7 @@ a{
     border-style: none;
         &:hover{
             color: #ffffff;
-            background-color:#473BF0;
+            background-color:$brightPurple;
         }
 }
 
@@ -218,12 +226,12 @@ a{
 }
 
 .card-header{
-    color: #473BF0;
+    color: $brightPurple;
     background-color: #bdbfeabd;
 }
 
 .btn-link{
-    color: #473BF0;
+    color: $brightPurple;
     text-decoration: none;
 }
 
@@ -233,7 +241,7 @@ a{
 }
 
 .btn-link{
-    color:#473BF0;
+    color:$brightPurple;
 }
 
 
