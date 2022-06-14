@@ -46,12 +46,20 @@
 <main>
     <h1 class="textoIntro">Frequently Asked Questions:</h1>
 
-    <!-- ACORDION DE BOOTSTRAP-->
+    <!-- SEARCH DE BOOTSTRAP-->
     <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Type your keywords" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+    </div>
+
+    <!-- ACORDION DE BOOTSTRAP-->
     <div class="accordion" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -92,6 +100,22 @@
             </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+            Of course! When filling the review form, just mark on the "I want this review to be anonymous" section.
+            </div>
+            </div>
+            </div>
+        </div> 
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Is it possible that my review remains anonymous?
+                </button>
+            </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
             <div class="card-body">
             Of course! When filling the review form, just mark on the "I want this review to be anonymous" section.
             </div>

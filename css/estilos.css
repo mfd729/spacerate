@@ -33,11 +33,13 @@ a:hover {
   align-items: center;
 }
 
-.navbar .nav {
+/* METER EL MARGIN LEFT EN MEDIA QUERY PARA DESKTOP */
+.navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-left: auto;
 }
 
 .bg-light {
@@ -781,6 +783,16 @@ a:hover {
   }
 }
 /* -------------------------------PAGINA PROPIEDADES ------------------------------------ */
+.cardsContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cardPropiedad {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
 .tarjetaSingular {
   margin-bottom: 1rem !important;
   margin-top: 1rem !important;
@@ -875,7 +887,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: 5rem;
 }
 .botonCargarMas:hover {
@@ -924,7 +936,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   margin-left: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .form-control {

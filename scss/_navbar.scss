@@ -13,11 +13,13 @@
     align-items: center;
 }
 
-.navbar .nav{
+/* METER EL MARGIN LEFT EN MEDIA QUERY PARA DESKTOP */
+.navbar-nav{
     display: flex;   
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
 }
 
 
